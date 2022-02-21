@@ -15,7 +15,7 @@ const Card: React.FC<{ word: {text: string, id: number},
     return (
         <div
         onClick={turnAround}
-        className="h-full bg-red-300 flex justify-center 
+        className="min-h-[60px] bg-red-300 flex justify-center 
         items-center cursor-pointer">
             {isTurned || props.guessed || props.turned ? <p>{props.word.text}</p>:''}
         </div>
